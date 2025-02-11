@@ -123,34 +123,79 @@ public class PracticeProblem {
 		
 		Scanner in = new Scanner(System.in);
 
-		System.out.print("Input the word mango: "):
+		System.out.print("Input the word mango: ");
 		String word = in.nextLine();
-
-		String mango = 
+		System.out.println(word.equalsIgnoreCase("mango"));
 
 	}
 	public static void q8() {
 		//Write question 5 code here
 		
+		Scanner in = new Scanner(System.in);
+
+		System.out.print("Input a word: ");
+		String word = in.nextLine();
+		System.out.print("Input a letter: ");
+		String letter = in.nextLine();
+
+		System.out.println(word.indexOf(letter));
+		System.out.println(word.lastIndexOf(letter));
 	}
 
 	public static void q9() {
 		//Write question 5 code here
 		
+		Scanner in = new Scanner(System.in);
+
+		System.out.print("Input a sentence: ");
+		String sent = in.nextLine();
+
+		System.out.println("Your sentence is " + sent.length() + " characters long");
+
 	}
 	public static void q10() {
 		//Write question 5 code here
 		
+		Scanner in = new Scanner(System.in);
+
+		System.out.print("Input a sentence: ");
+		String sent = in.nextLine();
+
+		System.out.print("Input a word to replace: ");
+		String word = in.nextLine();
+
+		System.out.print("What word would you like to replace it with: ");
+		String replace = in.nextLine();
+
+		System.out.println(sent.replaceAll(word, replace));
+
 	}
 
 	public static void q11() {
 		//Write question 5 code here
-		
+	
+		Scanner in = new Scanner(System.in);
+	
+		System.out.print("Input a sentence: ");
+		String sent = in.nextLine();
+
+		sent = sent.trim();
+		System.out.println(sent.toUpperCase());
+		System.out.println(sent.toLowerCase());
+
 	}
 
 	public static void q12() {
 		//Write question 5 code here
 		
+		Scanner in = new Scanner (System.in);
+
+		System.out.print("Input a word: ");
+		String word = in.nextLine();
+
+		System.out.println(word.substring(0, 4));
+		System.out.println(word.substring(word.length()-4));
+
 	}
 	
 
